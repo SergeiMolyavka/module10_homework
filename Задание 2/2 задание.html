@@ -1,0 +1,25 @@
+<!-- Задание2.
+Сверстайте кнопку, клик на которую будет выводить данные о размерах экрана с помощью alert. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 задание</title>
+    <link rel="stylesheet" type="text/css" href="2 задание.css">
+</head>
+<body>
+    <button id="sizeBtn">Показать размер экрана</button>
+    <script>
+        const sizeBtn = document.getElementById("sizeBtn");
+
+        sizeBtn.addEventListener("click", function() {
+            const screenWidth = window.screen.width;
+            const screenHeight = window.screen.height;
+            alert(`Размер экрана: ${screenWidth} x ${screenHeight}`);
+        });
+    </script>
+</body>
+</html>
